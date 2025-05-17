@@ -6,8 +6,8 @@ import (
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"github.com/vcd-simple-blog/api-gateway/config"
-	"github.com/vcd-simple-blog/api-gateway/interfaces/http"
+	"github.com/vcd-simple-blog/apps/backend/api-gateway/config"
+	"github.com/vcd-simple-blog/apps/backend/api-gateway/interfaces/http"
 )
 
 func main() {
