@@ -1,0 +1,9 @@
+go 1.21
+
+use (
+    ./apps/backend/auth-service
+    ./apps/backend/blog-service
+    ./apps/backend/user-service
+    ./apps/backend/api-gateway
+    ./packages/go/common
+)

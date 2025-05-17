@@ -1,0 +1,32 @@
+FROM node:18-alpine AS base
+
+# Install pnpm
+RUN npm install -g pnpm
+
+# Set working directory
+WORKDIR /app
+
+# Copy root package.json and pnpm-workspace.yaml
+COPY package.json pnpm-workspace.yaml ./
+
+# Copy the shell package.json
+COPY apps/frontend/shell/package.json ./apps/frontend/shell/
+
+# Copy shared packages
+COPY packages/ui/package.json ./packages/ui/
+COPY packages/utils/package.json ./packages/utils/
+
+# Install dependencies
+RUN pnpm install
+
+# Copy the rest of the application
+COPY . .
+
+# Set working directory to the shell app
+WORKDIR /app/apps/frontend/shell
+
+# Expose port
+EXPOSE 3000
+
+# Start development server
+CMD ["pnpm", "dev"]
