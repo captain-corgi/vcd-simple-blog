@@ -64,6 +64,7 @@ jobs:
           
       - name: Run tests
         run: |
+          go work sync  # Ensure the workspace is synced with `go.work`
           cd apps/backend
           go test ./... -v
 
