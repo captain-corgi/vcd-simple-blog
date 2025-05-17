@@ -6,11 +6,11 @@ import (
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"github.com/vcd-simple-blog/auth-service/config"
-	"github.com/vcd-simple-blog/auth-service/infrastructure/database"
-	"github.com/vcd-simple-blog/auth-service/infrastructure/repository"
-	"github.com/vcd-simple-blog/auth-service/interfaces/http"
-	"github.com/vcd-simple-blog/auth-service/usecases"
+	"github.com/vcd-simple-blog/apps/backend/auth-service/config"
+	"github.com/vcd-simple-blog/apps/backend/auth-service/infrastructure/database"
+	"github.com/vcd-simple-blog/apps/backend/auth-service/infrastructure/repository"
+	"github.com/vcd-simple-blog/apps/backend/auth-service/interfaces/http"
+	"github.com/vcd-simple-blog/apps/backend/auth-service/usecases"
 )
 
 func main() {

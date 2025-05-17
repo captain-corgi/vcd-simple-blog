@@ -2,9 +2,9 @@ package http
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/vcd-simple-blog/api-gateway/config"
-	"github.com/vcd-simple-blog/api-gateway/interfaces/http/handlers"
-	"github.com/vcd-simple-blog/api-gateway/interfaces/http/middleware"
+	"github.com/vcd-simple-blog/apps/backend/api-gateway/config"
+	"github.com/vcd-simple-blog/apps/backend/api-gateway/interfaces/http/handlers"
+	"github.com/vcd-simple-blog/apps/backend/api-gateway/interfaces/http/middleware"
 )
 
 // RegisterRoutes registers all API routes

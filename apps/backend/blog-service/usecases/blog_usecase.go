@@ -3,11 +3,10 @@ package usecases
 import (
 	"context"
 	"errors"
-	"time"
 
 	"github.com/google/uuid"
-	"github.com/vcd-simple-blog/blog-service/domain/entity"
-	"github.com/vcd-simple-blog/blog-service/domain/repository"
+	"github.com/vcd-simple-blog/apps/backend/blog-service/domain/entity"
+	"github.com/vcd-simple-blog/apps/backend/blog-service/domain/repository"
 )
 
 // BlogUseCase implements the blog use cases

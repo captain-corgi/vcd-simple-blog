@@ -1,9 +1,9 @@
-go 1.21
+go 1.24.0
 
 use (
-    ./apps/backend/auth-service
-    ./apps/backend/blog-service
-    ./apps/backend/user-service
-    ./apps/backend/api-gateway
-    ./packages/go/common
+	./apps/backend/api-gateway
+	./apps/backend/auth-service
+	./apps/backend/blog-service
+	./apps/backend/user-service
+	./packages/go/common
 )

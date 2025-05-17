@@ -6,11 +6,11 @@ import (
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"github.com/vcd-simple-blog/blog-service/config"
-	"github.com/vcd-simple-blog/blog-service/infrastructure/database"
-	"github.com/vcd-simple-blog/blog-service/infrastructure/repository"
-	"github.com/vcd-simple-blog/blog-service/interfaces/http"
-	"github.com/vcd-simple-blog/blog-service/usecases"
+	"github.com/vcd-simple-blog/apps/backend/blog-service/config"
+	"github.com/vcd-simple-blog/apps/backend/blog-service/infrastructure/database"
+	"github.com/vcd-simple-blog/apps/backend/blog-service/infrastructure/repository"
+	"github.com/vcd-simple-blog/apps/backend/blog-service/interfaces/http"
+	"github.com/vcd-simple-blog/apps/backend/blog-service/usecases"
 )
 
 func main() {
