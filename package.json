@@ -1,6 +1,6 @@
 {
   "name": "vcd-simple-blog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Modern web application monorepo with micro frontends and microservices",
   "engines": {
@@ -14,7 +14,8 @@
     "lint": "pnpm --filter \"./apps/frontend/**\" lint",
     "storybook": "pnpm --filter \"./apps/frontend/**\" storybook",
     "e2e": "pnpm --filter \"./apps/frontend/shell\" e2e",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "devDependencies": {
     "@commitlint/cli": "^18.0.0",
