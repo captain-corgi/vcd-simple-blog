@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/vcd-simple-blog/auth-service/domain/entity"
+	"github.com/vcd-simple-blog/apps/backend/auth-service/domain/entity"
 )
 
 // TokenRepository defines the interface for token data access

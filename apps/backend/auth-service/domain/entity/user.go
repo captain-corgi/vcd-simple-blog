@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/vcd-simple-blog/auth-service/domain/valueobject"
+	"github.com/vcd-simple-blog/apps/backend/auth-service/domain/valueobject"
 	"golang.org/x/crypto/bcrypt"
 )
 
