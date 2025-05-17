@@ -64,8 +64,17 @@ jobs:
           
       - name: Run tests
         run: |
+          set -e
+          go work sync  # Ensure the workspace is synced with `go.work`
           cd apps/backend
-          go test ./... -v
+          for dir in */; do
+            if [ -f "${dir}go.mod" ]; then
+              echo "Running tests in ${dir}"
+              cd "$dir"
+              go test ./... -v
+              cd ..
+            fi
+          done
 
   build:
     name: Build
