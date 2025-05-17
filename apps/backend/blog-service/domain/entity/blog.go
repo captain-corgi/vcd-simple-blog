@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/vcd-simple-blog/blog-service/domain/valueobject"
+	"github.com/vcd-simple-blog/apps/backend/blog-service/domain/valueobject"
 )
 
 // Blog represents a blog post entity

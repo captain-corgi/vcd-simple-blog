@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/vcd-simple-blog/blog-service/domain/entity"
+	"github.com/vcd-simple-blog/apps/backend/blog-service/domain/entity"
 )
 
 // BlogRepository defines the interface for blog data access
